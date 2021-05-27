@@ -199,16 +199,12 @@ footer {
   width: 100px;
 }
 
-.footer-basic .copyright {
+.footer-basic {
   margin-top: 15px;
   text-align: center;
   font-size: 13px;
   color: #aaa;
   margin-bottom: 0;
-}
-
-.copyright {
-  position: absolute;
 }
 
 div a:nth-child(1):hover {
@@ -225,4 +221,8 @@ div a:nth-child(3):hover {
 
 div a:nth-child(4):hover {
   color: rgb(27, 102, 195);
+}
+.copyright {
+  text-align: center;
+  color: floralwhite;
 }
