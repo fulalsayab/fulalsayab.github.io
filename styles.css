@@ -233,6 +233,15 @@ div a:nth-child(4):hover {
   height: 10px;
 }
 
+aside {
+  justify-content: right;
+  min-width: 30%;
+  padding: 30px;
+  margin: 30px;
+  float: right;
+  font-style: italic;
+}
+
 img {
   border-radius: 50%;
   min-width: 30%;
@@ -244,12 +253,6 @@ figcaption {
   text-align: center;
 }
 
-h2.title {
-  color: #949494;
-  text-align: left;
-  font-family: Roboto;
-  text-decoration: none;
-}
 article {
   display: flex;
   flex-direction: column;
@@ -261,13 +264,11 @@ article {
   overflow-y: scroll;
 }
 
-aside {
-  justify-content: right;
-  min-width: 30%;
-  padding: 30px;
-  margin: 30px;
-  float: right;
-  font-style: italic;
+h2.title {
+  color: #949494;
+  text-align: left;
+  font-family: Roboto;
+  text-decoration: none;
 }
 
 p,
@@ -280,7 +281,7 @@ ul {
   font-size: 25px;
 }
 
-/* @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+/* /* @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   body,
   header,
   article,
@@ -300,7 +301,7 @@ ul {
     width: 20%;
     height: 20%;
   }
-}
+} */
 
 @media only screen and (min-width: 320px) and (max-width: 480px),
   (orientation: portrait) {
@@ -309,20 +310,24 @@ ul {
   article,
   nav a,
   #about p,
-  #about h2 #skills ul,
-  #skills h2,
+  title h2 #skills ul,
   figcaption,
   .copyright,
   footer {
     width: 270px;
-    font-size: 10px;
+    font-size: 1rem;
     overflow: scroll;
     white-space: nowrap;
   }
   footer {
     display: none;
   }
-
-  article {
+  aside {
+    padding: 0;
+    margin: 0;
   }
-} */
+
+  img {
+    display: none;
+  }
+}
