@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  box-sizing: border-box;
 }
 
 body {
@@ -8,7 +9,6 @@ body {
   background-image: url(images/backgoundImage.png);
   overflow: hidden;
   background-repeat: no-repeat;
-  
 }
 
 nav {
@@ -150,19 +150,79 @@ nav a:nth-child(6):hover ~ #indicator {
   background: linear-gradient(130deg, #3f87a6, #f69d3c);
 }
 
-#ytd-url {
+article {
+  padding: 5px;
+  margin-top: 5px;
+}
+h2 {
   display: block;
-  position: fixed;
-  right: 0;
+  color: snow;
+  font-weight: 400;
+  font-size: 28px;
+  font-family: sans-serif;
+}
+section {
+  padding: 5px;
+  margin: 5px;
+}
+
+footer {
+  position: absolute;
   bottom: 0;
-  padding: 10px 14px;
-  margin: 20px;
-  color: #fff;
-  font-family: Arial;
-  font-size: 14px;
-  text-decoration: none;
-  background-color: #000;
-  border-radius: 4px;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
-  z-index: 125;
+  width: 100%;
+  min-height: 2.5rem; /* Footer height */
+  padding: 40px 0;
+  color: #4b4c4d;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+  transition: all 1s;
+}
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 66px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 15px;
+  color: inherit;
+  opacity: 0.75;
+  transition: all 200ms;
+  justify-content: space-between;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+  transform: scale(1.5) translate(0px, -20px);
+  width: 100px;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+.copyright {
+  position: absolute;
+}
+
+div a:nth-child(1):hover {
+  color: tan;
+}
+
+div a:nth-child(2):hover {
+  color: seashell;
+}
+
+div a:nth-child(3):hover {
+  color: rgb(31, 159, 238);
+}
+
+div a:nth-child(4):hover {
+  color: rgb(27, 102, 195);
 }
